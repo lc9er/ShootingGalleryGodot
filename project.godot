@@ -18,6 +18,7 @@ config/icon="res://icon.png"
 
 window/size/resizable=false
 mouse_cursor/custom_image="res://Assets/crosshairs.png"
+mouse_cursor/custom_image_hotspot=Vector2( 20, 20 )
 
 [global]
 
