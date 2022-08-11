@@ -7,11 +7,11 @@
 - [x] Configure window size.
 
 # Gameplay
-- [ ] Display backgroung image.
-- [ ] Have targets show in randomized locations.
-- [ ] Contain targets within window borders.
-- [ ] Collision detection.
-- [ ] Cursor crosshairs.
+- [x] Display backgroung image.
+- [ ] Have target show in randomized locations.
+- [ ] Contain target within window borders.
+- [x] Collision detection.
+- [x] Cursor crosshairs.
 - [ ] Countdown.
 - [ ] Score display.
 - [ ] Shooting sound (ping for hit, hissing sound for miss).

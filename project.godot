@@ -11,11 +11,18 @@ config_version=4
 [application]
 
 config/name="Shooting Gallery Godot"
+run/main_scene="res://Scenes/ShootingGallery.tscn"
 config/icon="res://icon.png"
 
 [display]
 
 window/size/resizable=false
+mouse_cursor/custom_image="res://Assets/crosshairs.png"
+
+[global]
+
+main=false
+cursor=false
 
 [gui]
 
