@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/sky.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Target.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/ShootingGallery.cs" type="Script" id=3]
 
 [node name="ShootingGallery" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="Sky" type="Sprite" parent="."]
 position = Vector2( 511, 301 )

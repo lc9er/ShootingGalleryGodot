@@ -8,11 +8,13 @@
 
 # Gameplay
 - [x] Display backgroung image.
-- [ ] Have target show in randomized locations.
-- [ ] Contain target within window borders.
+- [x] Have target show in randomized locations.
+- [x] Contain target within window borders.
 - [x] Collision detection.
 - [x] Cursor crosshairs.
 - [ ] Countdown.
 - [ ] Score display.
 - [ ] Shooting sound (ping for hit, hissing sound for miss).
 - [ ] Background music/sound.
+- [ ] Start screen.
+- [ ] End game screen.
