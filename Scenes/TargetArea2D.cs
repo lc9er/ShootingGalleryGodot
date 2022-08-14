@@ -8,11 +8,20 @@ public class TargetArea2D : Area2D
 	private int screenYLeft  = 50;
 	private int screenYRight = 500;
 
+	[Signal]
+	public delegate void TargetHit();
+
 	public override void _Ready()
 	{
 		GD.Randomize();
 		MoveTarget();
 	}	
+
+	private void _on_Target_Hit()
+	{
+		MoveTarget();
+		EmitSignal(nameof(TargetHit));
+	}
 
 	private void MoveTarget()
 	{
@@ -24,3 +33,5 @@ public class TargetArea2D : Area2D
 		GD.Print(Position);
 	}
 }
+
+
