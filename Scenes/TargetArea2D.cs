@@ -30,7 +30,6 @@ public class TargetArea2D : Area2D
 		Vector2 newPos = new Vector2(posX, posY); 
 
 		Position = newPos;
-		GD.Print(Position);
 	}
 }
 

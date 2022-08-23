@@ -49,6 +49,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Time: 10"
 
 [node name="GameTimer" type="Timer" parent="TimerLabel"]
+process_mode = 0
 one_shot = true
 
 [connection signal="TargetHit" from="TargetArea2D" to="." method="_on_TargetArea2D_TargetHit"]

@@ -13,7 +13,7 @@
 - [x] Collision detection.
 - [x] Cursor crosshairs.
 - [ ] Countdown.
-- [ ] Score display.
+- [x] Score display.
 - [ ] Shooting sound (ping for hit, hissing sound for miss).
 - [ ] Background music/sound.
 - [ ] Start screen.

@@ -13,7 +13,8 @@ public class Target : Sprite
 				btn.ButtonIndex == (int)ButtonList.Left &&
 				@event.IsPressed())
 		{
-			// Move target and increment score
+			// Emit signal, to move target and increment score.
+			// Play hit sound.
 			EmitSignal(nameof(Hit));
 		}
 	}

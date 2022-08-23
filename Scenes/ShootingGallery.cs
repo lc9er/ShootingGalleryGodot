@@ -12,7 +12,9 @@ public class ShootingGallery : Node2D
 
 	private void _on_TargetArea2D_TargetHit()
 	{
+		// Update score on hit signal
 		Score += 1;
-		GD.Print(Score);
+		var updateScore = GetNode<Label>("ScoreLabel");
+		updateScore.Text = "Score: " + Score.ToString();
 	}
 }
