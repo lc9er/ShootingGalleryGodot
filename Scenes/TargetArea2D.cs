@@ -31,6 +31,14 @@ public class TargetArea2D : Area2D
 
 		Position = newPos;
 	}
+
+	private void _on_GameTimer_timeout()
+	{
+		var colShape = GetNode<CollisionShape2D>("CollisionShape2D");
+		colShape.Disabled = true;
+	}
 }
+
+
 
 
