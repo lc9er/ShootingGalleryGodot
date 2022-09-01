@@ -18,3 +18,6 @@ public class ShootingGallery : Node2D
 		updateScore.Text = "Score: " + Score.ToString();
 	}
 }
+
+
+
