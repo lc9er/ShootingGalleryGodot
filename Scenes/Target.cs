@@ -15,6 +15,8 @@ public class Target : Sprite
 		{
 			// Emit signal, to move target and increment score.
 			// Play hit sound.
+			var hitAudio = GetNode<AudioStreamPlayer2D>("HitAudio");
+			hitAudio.Play();
 			EmitSignal(nameof(Hit));
 		}
 	}
