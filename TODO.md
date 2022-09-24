@@ -1,12 +1,14 @@
 # TODO
 
-# Setup
+## Setup
+
 - [x] Get Godot, mono version.
 - [x] Create new project.
 - [x] Import image assets.
 - [x] Configure window size.
 
-# Gameplay
+## Gameplay
+
 - [x] Display backgroung image.
 - [x] Have target show in randomized locations.
 - [x] Contain target within window borders.
