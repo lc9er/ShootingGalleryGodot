@@ -24,6 +24,7 @@ stream = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+disabled = true
 
 [connection signal="input_event" from="." to="Target" method="_on_Target_input_event"]
 [connection signal="mouse_entered" from="." to="Target" method="_on_Target_mouse_entered"]

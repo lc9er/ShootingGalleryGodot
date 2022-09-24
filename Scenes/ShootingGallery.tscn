@@ -33,7 +33,7 @@ __meta__ = {
 "_edit_vertical_guides_": [ 25.0, 999.0 ]
 }
 
-[node name="TargetBackground" type="Area2D" parent="."]
+[node name="TargetBackground" type="Area2D" parent="." groups=["EnableAudio"]]
 script = ExtResource( 6 )
 
 [node name="MissAudio" type="AudioStreamPlayer2D" parent="TargetBackground"]
@@ -71,7 +71,6 @@ text = "Time: 10"
 process_mode = 0
 wait_time = 10.0
 one_shot = true
-autostart = true
 script = ExtResource( 5 )
 
 [node name="HUD" parent="." instance=ExtResource( 8 )]
@@ -80,3 +79,4 @@ script = ExtResource( 5 )
 [connection signal="TargetHit" from="TargetArea2D" to="." method="_on_TargetArea2D_TargetHit"]
 [connection signal="timeout" from="TimerLabel/GameTimer" to="TargetBackground" method="_on_GameTimer_timeout"]
 [connection signal="timeout" from="TimerLabel/GameTimer" to="TargetArea2D" method="_on_GameTimer_timeout"]
+[connection signal="StartGame" from="HUD" to="." method="_on_HUD_StartGame"]

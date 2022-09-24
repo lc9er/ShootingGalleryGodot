@@ -20,5 +20,5 @@
 - [x] Shooting sound (ping for hit, hissing sound for miss).
 - [ ] Background music/sound.
 - [x] Start screen.
-- [ ] Collision and Counter disabled until after 'Start' button pressed (and a .5 second buffer?)
+- [x] Collision and Counter disabled until after 'Start' button pressed (and a .5 second buffer?)
 - [ ] End game screen.

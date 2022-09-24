@@ -30,14 +30,11 @@ public class HUD : CanvasLayer
 		GetNode<Button>("StartButton").Show();
 	}
 
-	private void OnStartButtonPressed()
+	async private void OnStartButtonPressed()
 	{
 		GetNode<Button>("StartButton").Hide();
+		await ToSignal(GetTree().CreateTimer(2), "timeout");
 		EmitSignal("StartGame");
-		// StartGame signal should trigger:
-		// 1. Timer to make message disappear
-		// 2. Start the game timer
-		// 3. Enable the target collision area
 	}
 
 	private void OnMessageTimerTimeout()

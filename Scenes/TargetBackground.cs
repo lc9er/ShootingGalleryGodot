@@ -3,7 +3,12 @@ using System;
 
 public class TargetBackground : Area2D
 {
-	private bool audioEnabled = true;
+	private bool audioEnabled = false;
+	
+	private void EnableAudio()
+	{
+		audioEnabled = true;
+	}
 
 	private void _on_TargetBackground_input_event(object viewport, InputEvent @event, int shape_idx)
 	{
