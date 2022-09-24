@@ -31,4 +31,3 @@ public class TargetBackground : Area2D
 		audioEnabled = false;
 	}
 }
-

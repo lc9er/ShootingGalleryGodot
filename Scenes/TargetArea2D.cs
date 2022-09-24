@@ -38,7 +38,3 @@ public class TargetArea2D : Area2D
 		colShape.Disabled = true;
 	}
 }
-
-
-
-

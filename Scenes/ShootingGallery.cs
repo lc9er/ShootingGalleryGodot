@@ -30,8 +30,3 @@ public class ShootingGallery : Node2D
 		GetTree().CallGroup("EnableAudio", "EnableAudio");
 	}
 }
-
-
-
-
-
