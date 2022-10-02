@@ -41,4 +41,10 @@ public class HUD : CanvasLayer
 	{
 		GetNode<Label>("Message").Hide();
 	}
+
+	private void OnGameTimerTimeout()
+	{
+		ShowGameOver();
+	}
+
 }

@@ -79,4 +79,5 @@ script = ExtResource( 5 )
 [connection signal="TargetHit" from="TargetArea2D" to="." method="_on_TargetArea2D_TargetHit"]
 [connection signal="timeout" from="TimerLabel/GameTimer" to="TargetBackground" method="_on_GameTimer_timeout"]
 [connection signal="timeout" from="TimerLabel/GameTimer" to="TargetArea2D" method="_on_GameTimer_timeout"]
+[connection signal="timeout" from="TimerLabel/GameTimer" to="HUD" method="OnGameTimerTimeout"]
 [connection signal="StartGame" from="HUD" to="." method="_on_HUD_StartGame"]
