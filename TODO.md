@@ -21,4 +21,4 @@
 - [ ] Background music/sound.
 - [x] Start screen.
 - [x] Collision and Counter disabled until after 'Start' button pressed (and a .5 second buffer?)
-- [ ] End game screen.
+- [x] End game screen.
