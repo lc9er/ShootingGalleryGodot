@@ -24,6 +24,22 @@ public class ShootingGallery : Node2D
 		var updateScore = GetNode<Label>("ScoreLabel");
 		updateScore.Text = "Score: " + Score.ToString();
 	}
+	
+	private void PlayBackgroundMusic (bool onOff)
+	{
+		var bgMusic = GetNode<AudioStreamPlayer2D>("BackgroundMusic");
+
+		if (onOff)
+		{
+			bgMusic.Play();
+		}
+		else
+		{
+			bgMusic.Stop();
+			bgMusic.Seek(0);
+		}
+	}
+
 	private void _on_HUD_StartGame()
 	{
 		// 1. Hide message
@@ -36,5 +52,11 @@ public class ShootingGallery : Node2D
 		GetNode<Timer>("TimerLabel/GameTimer").Start();
 		GetTree().CallGroup("EnableAudio", "EnableAudio");
 		ResetScore();
+		PlayBackgroundMusic(true);
+	}
+
+	private void OnGameTimerTimeout()
+	{
+		PlayBackgroundMusic(false);
 	}
 }

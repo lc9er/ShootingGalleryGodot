@@ -18,7 +18,7 @@
 - [x] Collision disabled after countdown ends.
 - [x] Score display.
 - [x] Shooting sound (ping for hit, hissing sound for miss).
-- [ ] Background music/sound.
+- [x] Background music/sound.
 - [x] Start screen.
 - [x] Collision and Counter disabled until after 'Start' button pressed (and a .5 second buffer?)
 - [x] End game screen.

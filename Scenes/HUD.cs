@@ -46,5 +46,4 @@ public class HUD : CanvasLayer
 	{
 		ShowGameOver();
 	}
-
 }
